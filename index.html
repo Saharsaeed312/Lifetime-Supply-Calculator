@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snack Estimator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Snack Estimator</h1>
+    <script>
+      var favSnack = prompt("Enter Your Favourite Snack.");
+      var currentAge = prompt('Enter your age.');
+      var maxAge = 65;
+      var amountSnacksPerDay = prompt('Enter the amount of snacks you eat per day.');
+      var yearsRemain = maxAge - currentAge;
+      var total = yearsRemain * 365 * amountSnacksPerDay; // Assuming 365 days in a year
+
+      document.write(`<p><strong>Favourite Snack:</strong> ${favSnack}</p>`);
+      document.write(`<p><strong>Current age:</strong> ${currentAge}</p>`);
+      document.write(`<p><strong>Estimated Maximum Age:</strong> ${maxAge}</p>`);
+      document.write(`<p><strong>Amount of snacks per day:</strong> ${amountSnacksPerDay}</p>`);
+      document.write(`<p><strong>You will need:</strong> ${total} ${favSnack} to last you until the ripe old age of ${maxAge}.</p>`);
+    </script>
+  </div>
+
+</body>
+</html>
+
